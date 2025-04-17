@@ -1,0 +1,46 @@
+body
+{
+    background-color: #ebebe2;
+}
+.front
+{
+    padding: 20px;
+    align-items: flex-start;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+}
+.fronttxt
+{
+    padding: 10px;
+    justify-content: end;
+    text-align: end;
+}
+@font-face {
+    font-family: 'ExoRegular';
+    src: url('css/fonts/exo/Exo-Regular.otf');    
+}
+#profilepic
+{
+    height: 500px;
+    width: 330px;
+    border: #313130 4px solid;
+    border-radius: 3%;
+    float: left;
+}
+#name
+{
+    color: #313130;
+    font-family: ExoRegular, monospace;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: left;
+    
+}
+#summary
+{
+    color: #4d4d4c;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
