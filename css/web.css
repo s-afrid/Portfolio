@@ -4,7 +4,7 @@ body
 }
 .front
 {
-    padding: 20px;
+    padding: 30px;
     align-items: flex-start;
     flex-direction: row;
     display: flex;
@@ -12,9 +12,8 @@ body
 }
 .fronttxt
 {
-    padding: 10px;
+    padding: 70px;
     justify-content: end;
-    text-align: end;
 }
 @font-face {
     font-family: 'ExoRegular';
@@ -24,7 +23,7 @@ body
 {
     height: 500px;
     width: 330px;
-    border: #313130 4px solid;
+    border: #585857 4px solid;
     border-radius: 3%;
     float: left;
 }
@@ -43,4 +42,5 @@ body
     font-family: monospace;
     font-size: 20px;
     font-weight: bold;
+    text-align: left;
 }
