@@ -4,43 +4,80 @@ body
 }
 .front
 {
-    padding: 6%;
-    align-items: flex-start;
-    flex-direction: row;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap; /* Wraps on smaller screens */
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    height: 100vh; /* Occupies most of the page */
+    box-sizing: border-box;
+    flex-direction: row;
 }
-.fronttxt
+/* Profile Picture */
+.frontimg
 {
-    padding: 12%;
-    justify-content: end;
-}
-@font-face {
-    font-family: 'ExoRegular';
-    src: url('css/fonts/exo/Exo-Regular.otf');    
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+    justify-items: center;
 }
 #profilepic
 {
-    height: 85%;
-    width: 25%;
+    height: 90%;
+    width: 90%;
     border: #585857 4px solid;
     border-radius: 3%;
-    float: left;
+    float: right;
+}
+/* Profile Text */
+.fronttxt
+{
+    flex: 2;
+    min-width: 300px;
+    max-width: 600px;
 }
 #name
 {
-    color: #313130;
-    font-family: ExoRegular, monospace;
-    font-size: 280%;
-    font-weight: bold;
-    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #3a3a39;
+    font-family: monospace;
     
 }
 #summary
 {
-    color: #4d4d4c;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #797976;
     font-family: monospace;
-    font-size: 120%;
-    font-weight: bold;
-    text-align: left;
+}
+
+
+/* 🟢 Mobile View */
+@media (max-width: 768px) {
+    .front {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .frontimg, .fronttxt {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    #profilepic {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    #name {
+        font-size: 2rem;
+    }
+
+    #summary {
+        font-size: 1rem;
+    }
 }
