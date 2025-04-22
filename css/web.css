@@ -4,7 +4,7 @@ body
 }
 .front
 {
-    padding: 30px;
+    padding: 6%;
     align-items: flex-start;
     flex-direction: row;
     display: flex;
@@ -12,7 +12,7 @@ body
 }
 .fronttxt
 {
-    padding: 70px;
+    padding: 12%;
     justify-content: end;
 }
 @font-face {
@@ -21,8 +21,8 @@ body
 }
 #profilepic
 {
-    height: 500px;
-    width: 330px;
+    height: 85%;
+    width: 25%;
     border: #585857 4px solid;
     border-radius: 3%;
     float: left;
@@ -31,7 +31,7 @@ body
 {
     color: #313130;
     font-family: ExoRegular, monospace;
-    font-size: 55px;
+    font-size: 280%;
     font-weight: bold;
     text-align: left;
     
@@ -40,7 +40,7 @@ body
 {
     color: #4d4d4c;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 120%;
     font-weight: bold;
     text-align: left;
 }
