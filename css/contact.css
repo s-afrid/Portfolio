@@ -1,0 +1,11 @@
+#contactlist li{
+    list-style-type: none;
+    display: inline;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+img:hover{
+    transform: scale(1.1);
+    
+}

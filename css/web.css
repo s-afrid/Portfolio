@@ -37,7 +37,7 @@ body
     min-width: 300px;
     max-width: 600px;
 }
-#name
+#name,#contact
 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -73,7 +73,7 @@ body
         height: auto;
     }
 
-    #name {
+    #name,#contact {
         font-size: 2rem;
     }
 
