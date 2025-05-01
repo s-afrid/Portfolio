@@ -1,11 +1,76 @@
-#contactlist li{
+#contactlist{
     list-style-type: none;
     display: inline;
     gap: 0.5rem;
     padding: 0.5rem;
+    justify-items: center;
+}
+li
+{
+    display: inline;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+.contactme
+{
+    flex: 3;
+    min-width: 15%;
+    max-width: 25%;
+    padding: 2rem;
+    justify-items: center;
+    border-right: 1px solid #888585;
+}
+.messagebox
+{
+    flex: 4;
+    min-width: 25%;
+    max-width: 60%;
+    padding: 2rem;
+    justify-items: center;
+    
+}
+#box{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #575755;
+    font-family: monospace;
+    gap: 1rem;
+}
+input, textarea{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #424241;
+    font-family: monospace;
+    gap: 1rem;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid #888585;
+    padding: 0.5rem;
+    width: 100%
+}
+textarea{
+    min-height: 100px;
+    max-height: 400px;
+}
+
+img{
+    height: 45px;
+    width: 45px;
 }
 
 img:hover{
     transform: scale(1.1);
-    
+}
+@media (max-width: 768px)
+{
+    .contactme{
+        max-width: 90%;
+        text-align: center;
+        border-right: none;
+        border-bottom: 1px solid #313030;
+    }
+    .messagebox{
+        max-width: 90%;
+        text-align: center;
+    }
 }

@@ -9,7 +9,6 @@ body
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    gap: 2rem;
     height: 100vh; /* Occupies most of the page */
     box-sizing: border-box;
     flex-direction: row;
@@ -18,9 +17,11 @@ body
 .frontimg
 {
     flex: 1;
-    min-width: 250px;
-    max-width: 400px;
+    min-width: 20%;
+    max-width: 30%;
     justify-items: center;
+    padding: 2.5rem;
+    border-right: 1px solid #313030;
 }
 #profilepic
 {
@@ -34,10 +35,11 @@ body
 .fronttxt
 {
     flex: 2;
-    min-width: 300px;
-    max-width: 600px;
+    min-width: 25%;
+    max-width: 60%;
+    padding: 2.5rem;
 }
-#name,#contact
+#myname,#contact,#message
 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -62,7 +64,13 @@ body
         padding: 1rem;
     }
 
-    .frontimg, .fronttxt {
+    .frontimg {
+        max-width: 40%;
+        border-right: none;
+        border-bottom: 1px solid #313030;
+    }
+
+    .fronttxt {
         max-width: 90%;
         text-align: center;
     }
@@ -73,7 +81,7 @@ body
         height: auto;
     }
 
-    #name,#contact {
+    #myname,#contact,#message {
         font-size: 2rem;
     }
 
