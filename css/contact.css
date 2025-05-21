@@ -55,6 +55,7 @@ button{
     font-family: monospace;
     gap: 1rem;
     border-radius: 7%;
+    border: none;
     height: 35px;
     width: 150px;
 }
@@ -70,8 +71,8 @@ textarea{
 }
 
 img{
-    height: 45px;
-    width: 45px;
+    height: 38px;
+    width: 38px;
 }
 
 img:hover{

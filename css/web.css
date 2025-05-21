@@ -17,8 +17,8 @@ body
 .frontimg
 {
     flex: 1;
-    min-width: 20%;
-    max-width: 30%;
+    min-width: 15%;
+    max-width: 25%;
     justify-items: center;
     padding: 2.5rem;
     border-right: 1px solid #313030;
