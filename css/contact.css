@@ -48,6 +48,22 @@ input, textarea{
     padding: 0.5rem;
     width: 100%
 }
+button{
+    font-size: 1.2rem;
+    color: #e6e6e2;
+    background-color: #313030;
+    font-family: monospace;
+    gap: 1rem;
+    border-radius: 7%;
+    height: 35px;
+    width: 150px;
+}
+button:hover{
+    transform: scale(1.1);
+}
+button:active{
+    transform: scale(0.9);
+}
 textarea{
     min-height: 100px;
     max-height: 400px;
@@ -60,6 +76,9 @@ img{
 
 img:hover{
     transform: scale(1.1);
+}
+img:active{
+    transform: scale(0.9);
 }
 @media (max-width: 768px)
 {
