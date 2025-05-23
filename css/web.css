@@ -2,14 +2,36 @@ body
 {
     background-color: #ebebe2;
 }
+/* For header*/
+.navigate
+{
+    display: flex;
+    flex-wrap: wrap; /* Wraps on smaller screens */
+    align-items: center;
+    justify-content: right;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+.navigate a:link, a:visited
+{
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:#313030;
+    text-decoration: none;
+    padding: 1rem;
+}
+
 .front
 {
     display: flex;
     flex-wrap: wrap; /* Wraps on smaller screens */
     align-items: center;
     justify-content: center;
-    padding: 2rem;
-    height: 100vh; /* Occupies most of the page */
+    padding: 1.5rem;
+    /* height: 100vh; /* Occupies most of the page */
     box-sizing: border-box;
     flex-direction: row;
 }
@@ -37,6 +59,7 @@ body
     flex: 2;
     min-width: 25%;
     max-width: 60%;
+    align-items: center;
     padding: 2.5rem;
 }
 #myname,#contact,#message
@@ -58,6 +81,9 @@ body
 
 /* 🟢 Mobile View */
 @media (max-width: 768px) {
+    .navigate {
+        padding: 0.5rem;
+    }
     .front {
         flex-direction: column;
         height: auto;
