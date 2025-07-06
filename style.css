@@ -18,3 +18,24 @@ nav ul {
     border-bottom: 1px solid black;
 }
 /* ------------------------ */
+/* Front panel */
+.front {
+    display: flex;
+    gap: 20px;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    padding: 40px;
+}
+/* ----------- */
+/* Front profile pic */
+img{
+    width: 30vw;
+    margin: 35px;
+    position: relative;
+    left: 50px;
+}
+/* ------------------------ */
