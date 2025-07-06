@@ -4,6 +4,7 @@
 {
     font-family: "JetBrains Mono", monospace;
     background-color: #F9EFEF;
+    animation: onload 3s ease-in-out -1s;
 }
 /* Navigation bar design */
 nav ul {
@@ -45,6 +46,21 @@ img{
     margin: 35px;
     position: relative;
     left: 50px;
+}
+img:hover {
+    transform: scale(0.9,0.9);
+    transition: transform 2s ease;
+    cursor: pointer;
+}
+/* ------------------------ */
+/* Animation kay frame */
+@keyframes onload {
+    from {
+        filter: blur(4px);
+    }
+    to {
+        filter: blur(0px);
+    }
 }
 /* ------------------------ */
 /* Responsive */
