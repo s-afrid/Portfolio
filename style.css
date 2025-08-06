@@ -3,7 +3,7 @@
 *
 {
     font-family: "JetBrains Mono", monospace;
-    background-color: #F9EFEF;
+    background-color: #f5e9d9;
     animation: onload 3s ease-in-out -1s;
 }
 /* Navigation bar design */
@@ -53,7 +53,7 @@ img:hover {
     cursor: pointer;
 }
 /* ------------------------ */
-/* Animation kay frame */
+/* Animation key frame */
 @keyframes onload {
     from {
         filter: blur(4px);
