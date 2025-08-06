@@ -53,6 +53,42 @@ img:hover {
     cursor: pointer;
 }
 /* ------------------------ */
+/* Experience */
+.experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+}
+.experience ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    list-style: none;
+    padding-left: 0px;
+    margin: 10px;
+}
+.experience li, li > h2, li > h3, li > p{
+    background-color: black;
+    color: #faf8f4;
+    width: 30vw;
+    font-size: 100%;
+    text-align: center;
+}
+.experience li {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 10px 10px grey;
+}
+.experience h2{
+    font-size: 1.75em;
+}
+/* ------------------------ */
 /* Animation key frame */
 @keyframes onload {
     from {
@@ -76,4 +112,16 @@ img:hover {
         margin: 20px;
         width: 250px;
     }
+    
+}
+@media only screen and (max-width: 590px) {
+    .experience ul{
+        gap: 30px;
+    }
+    .experience li{
+        width: 70vw;
+    }
+    .experience li, li > h2, li > h3, li > p{
+    width: 90%;
+}
 }
