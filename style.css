@@ -62,7 +62,7 @@ nav ul {
     transform: scale(1,1);
     transition: transform 2s ease;
 }
-img:hover {
+.front img:hover {
     transform: scale(0.9,0.9);
     cursor: crosshair;
 }
@@ -110,6 +110,39 @@ img:hover {
 .experience h2{
     font-size: 1.75em;
 }
+/*--------------------------*/
+/* Education */
+.education{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    transform: scale(0.9);
+}
+.eduinfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 7px;
+    box-shadow: 10px 10px grey;
+    transform: scale(1,1);
+    transition: transform 2s ease;
+    background-color: rgb(248, 243, 243);
+    padding: 20px;
+    gap: 0px;
+}
+.eduinfo > *{
+    color: #161615;
+    text-align: center;
+
+}
+.eduinfo:hover{
+transform: scale(0.9,0.9);
+    cursor: crosshair;
+}
+
 /* ------------------------ */
 /* Animation key frame */
 @keyframes onload {
@@ -175,7 +208,7 @@ footer {
     cursor: crosshair;
 }
 
-
+/*-----------------------*/
 
 
 /* Responsive */
@@ -206,9 +239,18 @@ footer {
         margin: -5% 5%;
         transform: scale(0.7);
     }
+    
     .experience li, li > h2, li > h3, li > p{
     width: 90%;
 }
+.eduinfo{
+    gap: 20px;
+}
+.eduinfo > *{
+        width: 60vw;
+        margin: -5% 5%;
+        transform: scale(0.7);
+        font-size: 15px;
 }
 @media only screen and (max-width: 1360px) {
     body {
