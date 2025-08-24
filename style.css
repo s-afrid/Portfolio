@@ -52,6 +52,21 @@ nav ul {
     color: rgb(194, 192, 192);
     font-size: 1.5em;
 }
+.about a{
+    text-decoration: none;
+    color:#161615;
+    background-color: rgb(248, 243, 243);
+    width: 10%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px grey;
+    transform: scale(1,1);
+    transition: transform 1s ease;
+}
+.about a:hover{
+    transform: scale(1.2,1.2);
+}
 /* ----------- */
 /* Front profile pic */
 .front img{
@@ -190,6 +205,10 @@ footer {
     margin: 0;
     cursor: pointer;
     transform: scale(1.2);
+    transition: transform 1s ease;
+}
+.social img:hover{
+    transform: scale(1.4,1.4);
 }
 .made {
     color: #161615;
@@ -228,6 +247,9 @@ footer {
     .front p{
         font-size: 20px;
     }
+    .about a{
+        width: 35%;
+    }
     
 }
 @media only screen and (max-width: 590px) {
@@ -252,7 +274,7 @@ footer {
         transform: scale(0.7);
         font-size: 20px;
 }
-@media only screen and (max-width: 1360px) {
+@media only screen and (max-width: 912px) {
     body {
         background-image: url(backgroundpotrait.png);
         background-size: cover;
