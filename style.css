@@ -15,6 +15,9 @@ body{
     background-attachment: fixed;
 }
 
+.invert {
+    filter: invert(1);
+}
 
 /* Navigation bar design */
 nav ul {
@@ -96,7 +99,7 @@ nav ul {
     gap: 10px;
     list-style: none;
     padding-left: 0px;
-    margin: 10px;
+    margin: 20px;
     align-items: center;
     justify-content: center;
     transform: scale(1,1);
@@ -118,6 +121,78 @@ nav ul {
     box-shadow: 3px 3px grey;
 }
 
+/* ------------------------ */
+/* Projects */
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+}
+.projects ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    list-style: none;
+    padding-left: 0px;
+    margin: 10px;
+}
+.projects ul li{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(248, 243, 243);
+    border-radius: 10px;
+    box-shadow: 10px 10px grey;
+    transform: scale(1,1);
+    transition: transform 2s ease;
+}
+.projects ul li:hover{
+    transform: scale(0.9,0.9);
+    cursor: crosshair;
+}
+.projects li > h2 {
+    font-weight: bolder;
+    font-size: larger;
+}
+.projects li > img {
+    width: 70vw;
+    border-radius: 10px;
+}
+.projects li > p{
+    width: 70vw;
+    font-size: 100%;
+}
+.links {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 30px;
+}
+.links a{
+    color: #161615;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 10px;
+    border: 1px solid #161615;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: all 1s ease;
+}
+.links a:hover{
+    border: 1px solid #161615;
+    background-color: #161615;
+    color: rgb(248, 243, 243);
+}
+.links a:hover > img{
+    filter: invert(1);
+}
 /* ------------------------ */
 /* Experience */
 .experience{
@@ -323,6 +398,10 @@ footer {
     background-size: cover;
     background-position: center;
   }
+  .projects li > p{
+    width: 70vw;
+    font-size: 10px;
+}
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   body {
