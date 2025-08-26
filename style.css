@@ -128,7 +128,7 @@ nav ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto auto;
+    margin: 10px;
 }
 .projects ul{
     display: flex;
@@ -137,9 +137,11 @@ nav ul {
     list-style: none;
     padding-left: 0px;
     margin: 10px;
+    align-items: center;
+    justify-content: center;
 }
 .projects ul li{
-    width: 80vw;
+    width: 60vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,11 +162,11 @@ nav ul {
     font-size: larger;
 }
 .projects li > img {
-    width: 70vw;
+    width: 50vw;
     border-radius: 10px;
 }
 .projects li > p{
-    width: 70vw;
+    width: 50vw;
     font-size: 100%;
 }
 .links {
