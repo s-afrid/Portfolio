@@ -9,14 +9,31 @@
 }
 
 body{
-    background-image: url("img/background.png");
+    /* background-image: url("img/background.png");
     background-repeat: no-repeat;
     background-size: 100vw;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background-color: black;
 }
 
 .invert {
     filter: invert(1);
+}
+.bgvid{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    opacity: 0.5;
+    
+}
+.bgvid video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
 }
 
 /* Navigation bar design */
@@ -406,11 +423,11 @@ footer {
 }
 }
 @media screen and (max-width: 767px) {
-  body {
+  /* body {
     background-image: url("img/backgroundpotrait.png");
     background-size: cover;
     background-position: center;
-  }
+  } */
   .projects ul li{
     width: 80vw;
   }
@@ -421,24 +438,32 @@ footer {
     width: 70vw;
     font-size: 10px;
 }
+.bgvid{
+    top: 10px;
+    right: calc(100vw - 60px);
+}
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   body {
-    background-image: url("img/backgroundpotrait.png");
+    /* background-image: url("img/backgroundpotrait.png");
     background-size: cover;
-    background-position: center;
+    background-position: center; */
   }
   .skills ul{
     padding: 10px;
   }
+  .bgvid{
+    top: 10px;
+    right: 20px;
+  }
 }
 @media screen and (min-width: 1025px), 
        screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  body {
+  /* body {
     background-image: url("img/background.png");
     background-size: cover;
     background-position: center;
-  }
+  } */
 }
 
 
