@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css">
     <title>Syed Afrid</title>
   </head>
   <body>
@@ -69,8 +70,8 @@
       </div>
       <div class="projects">
         <h1>PROJECTS</h1>
-        <ul>
-
+        <button class="btn left" onclick="scrollLeft1()">&#8592;</button>
+        <ul class="slide" id="slide">
             <li>
                 <h2>Spotify GUI Clone</h2>
                 <img src="img/project1.png" alt="">
@@ -93,7 +94,9 @@
                 </div>
             </li>
         </ul>
+        <button class="btn right" onclick="scrollRight()">&#8594;</button>
       </div>
+
       <div class="experience">
         <h1>EXPERIENCE</h1>
         <ul>
@@ -160,5 +163,7 @@
       </div>
       <div class="made">Made with ♥ by Syed Afrid</div>
     </footer>
+    <script src="slide.js">
+    </script>
   </body>
 </html>

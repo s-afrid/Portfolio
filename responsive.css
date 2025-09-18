@@ -1,0 +1,101 @@
+/* Responsive */
+@media only screen and (max-width: 1020px) {
+    .front {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .front img {
+        position: static;
+        /* height: 320px; */
+        margin: 20px;
+        /* width: 250px; */
+        width: 60vw;
+    }
+    .front p{
+        font-size: 20px;
+    }
+    .about a{
+        width: 35%;
+    }
+    
+}
+@media only screen and (max-width: 590px) {
+    .experience ul{
+        gap: 20px;
+    }
+    .experience li{
+        width: 60vw;
+        margin: -5% 5%;
+        transform: scale(0.7);
+    }
+    
+    .experience li, li > h2, li > h3, li > p{
+    width: 90%;
+}
+.eduinfo{
+    gap: 20px;
+}
+.eduinfo > *{
+        width: 60vw;
+        margin: -5% 5%;
+        transform: scale(0.7);
+        font-size: 20px;
+}
+.skills ul{
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+}
+@media screen and (max-width: 767px) {
+  /* body {
+    background-image: url("img/backgroundpotrait.png");
+    background-size: cover;
+    background-position: center;
+  } */
+  .projects ul li{
+    width: 80vw;
+  }
+  .projects li > img{
+    width: 70vw;
+  }
+  .projects li > p{
+    width: 70vw;
+    font-size: 10px;
+}
+.bgvid{
+    top: 10px;
+    right: calc(100vw - 60px);
+}
+.slide {
+    height: 440px;
+    width: 80vw;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  body {
+    /* background-image: url("img/backgroundpotrait.png");
+    background-size: cover;
+    background-position: center; */
+  }
+  .skills ul{
+    padding: 10px;
+  }
+  .bgvid{
+    top: 10px;
+    right: 20px;
+  }
+  .slide {
+    height: 500px;
+  }
+}
+@media screen and (min-width: 1025px), 
+       screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* body {
+    background-image: url("img/background.png");
+    background-size: cover;
+    background-position: center;
+  } */
+    
+}
